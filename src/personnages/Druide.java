@@ -1,9 +1,11 @@
 package personnages;
 
+import Objets.Chaudron;
+
 public class Druide {
 	private String nom;
 	private int force;
-	private Chaudron chaudon = new chaudron();
+	private Chaudron chaudron = new Chaudron();
 
 	public String getNom() {
 		return nom;
