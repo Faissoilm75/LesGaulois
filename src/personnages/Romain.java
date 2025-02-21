@@ -26,9 +26,9 @@ public class Romain {
 		// TODO Auto-generated method stub
 		force -= forceCoup;
 		if (force < 1) {
-			parler("Aie");
-		} else {
 			parler("j'abandonne");
+		} else {
+			parler("Aie");
 		}
 
 	}
