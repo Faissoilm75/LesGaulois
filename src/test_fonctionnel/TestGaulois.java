@@ -1,5 +1,6 @@
 package test_fonctionnel;
 
+import personnages.Druide;
 import personnages.Gaulois;
 import personnages.Romain;
 
@@ -18,6 +19,22 @@ public class TestGaulois {
 		asterix.frapper(minus);
 		asterix.frapper(minus);
 		asterix.frapper(minus);
+
+		System.out.println("Dans la foret " + asterix.getNom() + "et" + obelix.getNom() + "tombe nez sur le romain"
+				+ minus.getNom() + ".");
+
+		for (int i = 0; i < 3; i++) {
+			asterix.frapper(minus);
+		}
+		Romain brutus = new Romain("brutus", 14);
+		Druide panoramix = new Druide("panoramix", 2);
+		panoramix.frabriquerPotion(4, 3);
+		panoramix.booster(obelix);
+		panoramix.booster(asterix);
+
+		for (int i = 0; i < 3; i++) {
+			asterix.frapper(brutus);
+		}
 	}
 
 }
